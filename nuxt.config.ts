@@ -13,6 +13,9 @@ export default defineNuxtConfig({
         },
 
         pageTransition: { name: 'fade', mode: 'out-in' },
-        layoutTransition: { name: 'slide', mode: 'out-in' }
+        layoutTransition: { name: 'slide', mode: 'out-in' },
+    },
+    runtimeConfig: {
+        apiKey: process.env.API_LAYER_KEY
     },
 })
